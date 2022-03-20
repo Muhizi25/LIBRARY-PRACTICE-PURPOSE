@@ -1,0 +1,17 @@
+﻿
+#footer2{
+    background-color:coral;
+}
+
+#footer1 {
+    background-color:brown;
+}
+.footerlinks{
+    text-decoration:none;
+    color:azure;
+}
+
+.footerlinks:hover {
+    
+    color:orange;
+}

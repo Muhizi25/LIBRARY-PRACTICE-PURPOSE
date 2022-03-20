@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="projectE_Library.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="datatable/css/jquery.dataTables.min.css" rel="stylesheet" /> 
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+     <link href="customecss/custom.css" rel="stylesheet" />
+<script src="javascript/tablescript.js"></script>
+    <script src="Jquerry/jquery-3.6.0.slim.js"></script>
+    <script src="Jquerry/popper.min.js"></script>
+    <script src="Jquerry/bootstrap.min.js"></script> 
+    <script src="Datatable/js/jquery.dataTables.min.js"></script>
+<body>
+      <form id="form1" runat="server">
+        <div style = background-color:#a55d6b;>
+            <nav class="navbar navbar-expand-lg navbar-light" >
+                <a class="navbar-brand" href="#" "color:whitesmoke;">
+<img" src="images/e-library.png" width="30" height="30" />
+                  E-learning  
+                </a>
+                <button class="navbar-toggler " type= "button" data-toggle = "collapse" data-target ="#navbarSupportedContent" aria-controls = "navbarSupportedContent" aria-expanded = "false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="homepage.aspx" Style="color:whitesmoke;">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="aboutus.aspx" Style="color:whitesmoke;">About Us</a>
+                            
+                        </li>
+                        <li class="nav-item active">
+                             <a class="nav-link" href="terms.aspx" Style="color:whitesmoke;">Donts</a>
+                        </li>
+                    </ul>
+
+                    <ul class = "navbar-nav "  style="margin-left:300px;">
+                           
+<li class="nav-item active">
+    
+    <asp:LinkButton ID="LinkButton3" CssClass="nav-link" runat="server"  Style="color:whitesmoke;" OnClick="LinkButton3_Click">Book View</asp:LinkButton>
+</li>
+                                                  
+<li class="nav-item active">
+   
+    <asp:LinkButton ID="LinkButton2" CssClass="nav-link" runat="server"  Style="color:whitesmoke;" OnClick="LinkButton2_Click">User Login</asp:LinkButton>
+    
+</li>
+                                                  
+<li class="nav-item active">
+       <asp:LinkButton ID="LinkButton1" CssClass="nav-link" runat="server"  Style="color:whitesmoke;" OnClick="LinkButton1_Click">SignUp</asp:LinkButton>
+   
+</li>
+                                                  
+<li class="nav-item active">
+   <asp:LinkButton ID="LinkButton4" CssClass="nav-link" runat="server"  Style="color:whitesmoke;" OnClick="LinkButton4_Click" Visible="False">Log Out</asp:LinkButton>
+</li>
+                                                  
+<li class="nav-item active">
+    <asp:LinkButton ID="LinkButton5" CssClass="nav-link" runat="server"  Style="color:whitesmoke;" OnClick="LinkButton5_Click" Visible="False">Hello user</asp:LinkButton>
+</li>
+                        </ul>
+
+                </div>
+            </nav>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <div ID="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <asp:LinkButton ID="LinkButton6" CssClass="footerlinks" runat="server" OnClick="LinkButton6_Click">Admin Login</asp:LinkButton>
+
+                            &nbsp;
+                           <asp:LinkButton CssClass="footerlinks" ID="LinkButton12" runat="server" OnClick="LinkButton12_Click" Visible="false">Auther Management</asp:LinkButton>
+                            &nbsp;
+
+                        <asp:LinkButton ID="LinkButton8" CssClass="footerlinks" runat="server" OnClick="LinkButton8_Click" Visible="false">Publisher Mangement</asp:LinkButton>
+                            &nbsp;
+
+                            <asp:LinkButton ID="LinkButton7" CssClass="footerlinks" runat="server" OnClick="LinkButton7_Click" Visible="false">Book Inventory</asp:LinkButton>
+                            &nbsp
+                            <asp:LinkButton ID="LinkButton9" CssClass="footerlinks" runat="server" OnClick="LinkButton9_Click" Visible="false">Book Issuing</asp:LinkButton>
+                            
+                            &nbsp;
+                           <asp:LinkButton ID="LinkButton10" CssClass="footerlinks" runat="server" OnClick="LinkButton10_Click" Visible="false">Member Management</asp:LinkButton>
+                            &nbsp;
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color:whitesmoke">&copy; All Right Reserved.<a class="footerlinks" href="#" target="_blank">   Here we go  </a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
